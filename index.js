@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import pool from "./config/db.js";
-import userRoutes from "./routes/userRoutes.js";
-import errorHandler from "./middlewares/errorHandler.js";
-import { createUserTable } from "./data/createUserTable.js";
+import userRoutes from "./src/routes/userRoutes.js";
+import { createUserTable } from './src/data/createUserTable.js';
+import errorHandler from './src/middlewares/errorHandler.js';
+import pool from './src/config/db.js';
 
 dotenv.config();
 const app = express();
